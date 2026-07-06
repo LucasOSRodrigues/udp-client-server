@@ -1,4 +1,5 @@
 TERMINAL = konsole # ajustar para o terminal do sistema operacional
+all: client server
 
 client:
 	gcc cliente_udp.c -o client
@@ -18,5 +19,3 @@ run-client: client
 
 
 run: client server run-server run-client
-
-all: client server
